@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .header-img {
+            flex-shrink: 0;
+        }
+
+        .header-img img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .header-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .header-info h2 {
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+
+        .header-info .title {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .separator {
+            color: #999;
+            margin: 0 8px;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0066cc;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .skills-table {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .skills-table tr {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skills-table td {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .skills-table ul {
+            margin-left: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .projects-list li {
+            margin-bottom: 15px;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .header-img img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .header-info h2 {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 0 15px;
+            }
+
+            .skills-table tr {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .skills-table td {
+                min-width: 100%;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 10px;
+            }
+
+            .header-img img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .header-info h2 {
+                font-size: 20px;
+            }
+
+            .contact-info {
+                font-size: 12px;
+            }
+
+            .separator {
+                display: none;
+            }
+
+            .contact-info a {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            section {
+                padding: 0 10px;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-img">
+                <a target="_blank" href="https://www.linkedin.com/in/aman-gupta-2626rattan/">
+                    <img src="images\aman picture (1).jpg" alt="Aman's Pic">
+                </a>
+            </div>
+            <div class="header-info">
+                <h2>Aman Gupta</h2>
+                <p class="title">Data Science Student</p>
+                <div class="contact-info">
+                    <a href="https://www.google.com/maps/place/30%C2%B045'19.9%22N+76%C2%B046'20.0%22E/@30.755537,76.772231,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.755537!4d76.772231?entry=ttu&g_ep=EgoyMDI2MDExOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank">Chandigarh, India</a>
+                    <span class="separator">|</span>
+                    <a href="tel:9464200011" target="_blank">9464200011</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:aman31.work@gmail.com" target="_blank">aman31.work@gmail.com</a>
+                    <span class="separator">|</span>
+                    <a href="https://www.linkedin.com/in/aman-gupta-2626rattan" target="_blank">LinkedIn: Aman Gupta</a>
+                    <span class="separator">|</span>
+                    <a href="https://github.com/just-aman07" target="_blank">Github: just-aman07</a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Building practical software solutions as a 4th semester student at Chandigarh University with interests in MERN Stack development and programming in C, C++, Python, and Java. Engaging in minor academic projects to enhance technical skills and real-world application knowledge.</p>
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>Computer Science student skilled in MERN stack (MongoDB, Express.js, React.js, Node.js), JavaScript, C/C++, Python, and basic Machine Learning. Experienced in building responsive web apps, working with RESTful APIs, and managing databases. Strong communication and teamwork skills, eager to contribute and learn through a full stack development internship.</p>
+        </section>
+
+        <section>
+            <h2>Qualifications</h2>
+            <ul>
+                <li>Bachelor of Technology (B.Tech), 2nd Year Chandigarh University CGPA: 7.3</li>
+                <li>Senior Secondary Saint Fateh Singh School, Bathinda Score: 85%</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C / C++</li>
+                            <li>Java</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Canva</li>
+                            <li>Blogging</li>
+                            <li>Power BI</li>
+                            <li>Premiere Pro</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="https://courses.ibmmooc.skillsnetwork.site/certificates/90c364dfaac54a7c9791ab26a5c699e5" target="_blank">Virtual Internship Generative AI</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/OPMZOHGYIS46" target="_blank">Innovation Through Design</a></li>
+                <li><a href="https://courses.cu.skillsnetwork.site/certificates/d5f52793ede44c6e84ee19de339cf709" target="_blank">Software Foundation Course - C++</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/UQF5TLBE4OJM" target="_blank">Introduction To AI</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li>
+                    <h3>Vyoscholar</h3>
+                    <p>Enabled interactive exploration of space concepts for learners through the creation of VyoScholar using AI chatbot support and immersive 3D environments.</p>
+                </li>
+                <li>
+                    <h3>Highway Management System</h3>
+                    <p>Built an end-to-end Highway Management System that optimizes land utilization and material forecasting for more efficient infrastructure projects.</p>
+                </li>
+                <li>
+                    <h3>Employee Turnover System</h3>
+                    <p>Built an AI-driven retention tool to predict employee attrition by balancing workload metrics with competitive wage and hour structures.</p>
+                </li>
+                <li>
+                    <h3>Automatic Instagram Caption Generator</h3>
+                    <p>IBM Internship: Engineered an end-to-end caption generation system as a capstone project.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Prioritization</li>
+                <li>Verbal And Written Communication</li>
+                <li>Leadership</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Additional Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> English, Punjabi, Hindi</li>
+                <li><strong>Awards & Activities:</strong>
+                    <ol>
+                        <li>First Prize – Engineer's Day, Civil Department, CU</li>
+                        <li>Third Prize – Tech Invent (Maths Carnival), CU (September 2024)</li>
+                    </ol>
+                </li>
+                <li><strong>Content & Media Skills:</strong> Content Writing (Blogging) • Video Editing</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
